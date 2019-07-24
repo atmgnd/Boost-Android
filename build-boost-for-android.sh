@@ -38,7 +38,7 @@ cd $dir_name
 echo "Generating config..."
 user_config=tools/build/src/user-config.jam
 rm -f $user_config
-cat <<EOF > $user_config
+cat > $user_config <<EOF
 import os ;
 
 using clang : android
