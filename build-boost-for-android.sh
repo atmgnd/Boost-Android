@@ -84,14 +84,14 @@ echo "Building..."
     toolset=clang-android \
     architecture=arm \
     variant=release \
-    --layout=versioned \
     target-os=android \
     threading=multi \
     threadapi=pthread \
     link=static \
-    runtime-link=static \
     install
 
+#    --layout=versioned \
+#    runtime-link=static \
 #    --with-fiber \
 
 echo "Running ranlib on libraries..."
